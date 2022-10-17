@@ -5,6 +5,9 @@ Starter Template ini dapat anda gunakan untuk memulai project pada video tutoria
 Figma Desain Source
 https://www.figma.com/file/EYNVb9h4w2DV0AmdIuZ82j/Store-(BWA)?node-id=5%3A3
 
+Animate On Scroll Library
+https://michalsnik.github.io/aos/
+
 ## Lisensi
 
 MIT License
