@@ -1,4 +1,4 @@
-# BWAStore HTML Starter Template
+# BWAStore HTML Starter Slicing Figma
 Starter Template ini dapat anda gunakan untuk memulai project pada video tutorial [BWASTORE](https://bit.ly/BWASTORE)
 <hr>
 
