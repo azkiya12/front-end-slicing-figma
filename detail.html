@@ -97,6 +97,59 @@
         </div>
       </div>
     </section>
+
+    <section class="store-gallery" id="gallery">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-8" >
+            <Transition name="slide-fade" mode="out-in">
+              <img :src="photos[activePhoto].url" :key="photos[activePhoto].id" class="w-100 main-image" alt="" />
+            </Transition>
+          </div>
+          <div class="col-lg-2">
+            <div class="row">
+              <div class="col-3 col-lg-12 mt-2 mt-lg-0" v-for="(photo, index) in photos" :key="photo.id" >
+                <a href="#" @click="changeActive(index)">
+                  <img :src="photo.url" class="w-100 thumbnail-image" :class="{ active: index == activePhoto }" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="store-detail-container" data-aos="fade-up">
+      <section class="store-heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>Sofa ternyaman</h1>
+              <div class="owner">By Azkiya Amala</div>
+              <div class="price">$1,050</div>
+            </div>
+            <div class="col-lg-2" data-aos="zoom-in">
+              <a href="/cart.html" class="btn btn-success px-4 text-white btn-block mb-3">Add to Cart</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="store-description">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur earum velit eum modi molestiae, quidem quis. Dolores, porro magni! Libero, exercitationem autem? Amet delectus nisi perspiciatis, quas veniam laudantium culpa!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam, quasi vel aliquid commodi, perspiciatis odio est voluptatum deleniti dolores deserunt eius omnis, fuga harum inventore. Autem illo consequuntur ab.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 
   <!-- Footer Sciling -->
@@ -118,7 +171,43 @@
   <script>
     AOS.init();
   </script>
+  <script src="/vendor/vue/vue.js"></script>
+  <script>
+    var gallery = new Vue({
+      el: "#gallery",
+      mounted() {
+        AOS.init();
+      },
+      data: {
+        activePhoto: 0,
+        photos: [
+          {
+            id: 1,
+            url: "/images/product-details-1.jpg"
+          }, 
+          {
+            id: 2,
+            url: "/images/product-details-2.jpg"
+          },
+          {
+            id: 3,
+            url: "/images/product-details-3.jpg"
+          },
+          {
+            id: 4,
+            url: "/images/product-details-4.jpg"
+          },
+        ],
+      },
+      methods: {
+        changeActive(id) {
+          this.activePhoto=id;
+        }
+      },
+    });
+  </script>
   <script src="/script/navbar-scroll.js"></script>
+
 </body>
 
 </html>
