@@ -8,10 +8,10 @@
 @import "pages/home";
 @import "pages/detail";
 @import "pages/cart";
+@import "pages/success";
 
-@import "pages/components/categories";
-@import "pages/components/products";
-@import "pages/components/breadcrumbs";
+@import "components/categories";
+@import "components/products";
+@import "components/breadcrumbs";
 
 @import "transitions/slide-fade";
-
