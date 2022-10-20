@@ -229,7 +229,30 @@
             <hr>
           </div>
           <div class="col-12">
-            <h2 class="mb-4">Payment Info</h2>
+            <h2 class="mb-2">Payment Info</h2>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-4 col-md-2">
+            <div class="product-title">$10</div>
+            <div class="product-subtitle">Country Tax</div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="product-title">$580</div>
+            <div class="product-subtitle">Product Insurance</div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="product-title">$10</div>
+            <div class="product-subtitle">Ship to Kediri</div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="product-title text-success">$600</div>
+            <div class="product-subtitle"><b>Total</b></div>
+          </div>
+          <div class="col-8 col-md-3">
+            <a href="/success.html" class="btn btn-success mt-4 px-4 btn-block">
+              Checkout Now
+            </a>
           </div>
         </div>
       </div>
@@ -255,41 +278,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="/vendor/vue/vue.js"></script>
-  <script>
-    var gallery = new Vue({
-      el: "#gallery",
-      mounted() {
-        AOS.init();
-      },
-      data: {
-        activePhoto: 0,
-        photos: [
-          {
-            id: 1,
-            url: "/images/product-details-1.jpg"
-          }, 
-          {
-            id: 2,
-            url: "/images/product-details-2.jpg"
-          },
-          {
-            id: 3,
-            url: "/images/product-details-3.jpg"
-          },
-          {
-            id: 4,
-            url: "/images/product-details-4.jpg"
-          },
-        ],
-      },
-      methods: {
-        changeActive(id) {
-          this.activePhoto=id;
-        }
-      },
-    });
-  </script>
+  
   <script src="/script/navbar-scroll.js"></script>
 
 </body>
