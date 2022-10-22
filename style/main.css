@@ -9469,7 +9469,7 @@ footer p {
   color: #0c0d36;
 }
 .page-auth .section-store-auth .form-control {
-  border-radius: 0px;
+  border-radius: 8px;
   background: #f3f3f3;
 }
 .page-auth .section-store-auth .btn-signup {
