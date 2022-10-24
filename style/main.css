@@ -9587,6 +9587,16 @@ footer p {
   line-height: 25px;
   color: #9191a9;
 }
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-size: 18px;
+  color: #9191a9;
+  border-radius: 0;
+}
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  color: #0c0d36;
+  border-bottom: 2px solid #0c0d36;
+  background: none;
+}
 
 .component-categories {
   background: #f4f4f4;
