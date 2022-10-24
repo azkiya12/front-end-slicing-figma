@@ -32,10 +32,10 @@
           <a href="/dashboard-transactions.html" class="list-group-item list-group-item-action ">
             Transactions
           </a>
-          <a href="/dashboard-settings.html" class="list-group-item list-group-item-action active">
+          <a href="/dashboard-settings.html" class="list-group-item list-group-item-action">
             Store Settings
           </a>
-          <a href="/dashboard-account.html" class="list-group-item list-group-item-action ">
+          <a href="/dashboard-account.html" class="list-group-item list-group-item-action active">
             My Account
           </a>
           <a href="/index.html" class="list-group-item list-group-item-action ">
@@ -102,9 +102,9 @@
         <div class="section-content section-dashboard-home" data-aos="fade-up">
           <div class="container-fluid">
             <div class="dashboard-heading">
-              <h2 class="dashboard-title">Store Settings</h2>
+              <h2 class="dashboard-title">My Account</h2>
               <p class="dashboard-subtitle">
-                Make store that profitable
+                Updae your current profile
               </p>
             </div>
             <div class="dashboard-content">
@@ -114,40 +114,59 @@
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group" >
-                              <label for="nameStore">Nama Toko</label>
-                              <input type="text" class="form-control" name="nameStore" aria-describedby="storeHelp">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="recivername">Your Name</label>
+                              <input type="text" class="form-control" id="recivername" name="recivername" value="Azki">
                             </div>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <div class="form-group">
-                              <label for="categoryStore">Kategori</label>
-                              <select name="categoryStore" id="" class="form-control">
-                                <option value="" disabled>Select Category</option>
+                              <label for="email">Your Email</label>
+                              <input type="email" class="form-control" name="email" v-model="email" id="email" value="gakrohlali@gmail.com">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="contact">Contact Number</label>
+                              <input type="text" class="form-control" id="contact" name="contact" value="0812-1234-1234">
+                            </div>
+                          </div>
+                          <div class="col-md-8 mr-md-4">
+                            <div class="form-group">
+                              <label for="address">Address</label>
+                              <input type="text" class="form-control" id="address" name="address"
+                                value="Jl. Beringin Desa Tambakrejo Kec. Gurah">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="province">Province</label>
+                              <select class="form-control" id="province" name="province" value="">
+                                <option value="East Java">East Java</option>
                               </select>
                             </div>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <div class="form-group">
-                              <label for="store">Store Status</label>
-                              <p class="text-muted">
-                                Apakah saat ini toko anda buka?
-                              </p>
-                              <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" name="is_store_open" id="openStoreTrue" class="custom-control-input" value="true">
-                                <label for="openStoreTrue" class="custom-control-label">
-                                  Buka
-                                </label>
-                              </div>
-                            
-                              <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" name="is_store_open" id="openStoreFalse" class="custom-control-input" value="false">
-                                <label for="openStoreFalse" class="custom-control-label">
-                                  Sementara Tutup
-                                </label>
-                              </div>
-                            
+                              <label for="city">City</label>
+                              <select class="form-control" id="city" name="city" value="">
+                                <option value="Kediri">Kediri</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="country">Country</label>
+                              <input type="text" class="form-control" id="country" name="country" value="Indonesia">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="kodepos">Pos Code</label>
+                              <select class="form-control" id="kodepos" name="kodepos" value="">
+                                <option value="61231">61231</option>
+                              </select>
                             </div>
                           </div>
                         </div>
